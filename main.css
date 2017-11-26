@@ -1,0 +1,46 @@
+body {
+    padding: 0;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.nav li {
+    display: inline-block;
+}
+
+
+.BackgroundBox {
+    padding: 15px 15px 15px 15px;
+    width: 500px;
+    background: #afafbc;
+}
+
+.CurrentBox {
+    width: 200px;
+    background: #f9f9fc;
+    margin: 15px auto 15px auto;
+}
+
+.TargetBox {
+    width: 200px;
+    background: #f9f9fc;
+    margin: 15px auto 15px auto;
+}
+
+.DeltaBox {
+    width: 450px;
+    background: #f9f9fc;
+    margin: 15px auto 15px auto;
+}
+
+h3 {
+    color: #afafbc;
+    font-size: 20px;
+}
