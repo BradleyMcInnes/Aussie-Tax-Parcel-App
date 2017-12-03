@@ -1,20 +1,23 @@
 body {
-    padding: 0;
+    padding: 10px;
+}
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 150px 1fr;
 }
 
-
-a {
-    text-decoration: none;
+.TopBox {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background: #4286f4;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
-
-a:hover {
-    text-decoration: underline;
-}
-
-.nav li {
-    display: inline-block;
-}
-
 
 .BackgroundBox {
     grid-column-start: 2;
@@ -56,28 +59,54 @@ a:hover {
     margin: 15px auto 15px auto;
 }
 
-h3 {
-    color: #afafbc;
-    font-size: 20px;
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-}
-
-.TopBox {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    display: grid;
-    grid-template-columns: repeat (4, 1fr);
-    background: #4286f4;
-}
 
 .nav {
-    grid-column-start: 4;
-    grid-column-end: 5;
+    display: inline;
+}
+
+h1 {
+    font-family: Helvetica, Arial;
+    font-size: 30px;
+    font-weight: bold;
+}
+a {
+    text-decoration: none;
+    font-family: Helvetica, Arial;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+h3 {
+    color: #51555b;
+    font-family: Helvetica, Arial;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav li {
+    display: inline-block;
+
+
+
+
+label {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-family: Helvetica, Arial;
+    font-size: 15px;
+    float: left;
+    clear: left;
+}
+
+input {
+    display: inline-block;
+    margin-bottom: 10px;
+    float: right;
+    align-self: right;
+}
+input[type=submit] {
+    font-size: 15px;
+    font-weight: bold;
+    clear: both;
 }
