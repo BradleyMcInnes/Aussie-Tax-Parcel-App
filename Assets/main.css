@@ -1,27 +1,26 @@
 body {
-    padding: 10px;
-}
-}
-.grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 150px 1fr;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 100px 1fr;
+    grid-row-gap: 10px;
+    align-items: stretch;
 }
 
 .TopBox {
     grid-column-start: 1;
-    grid-column-end: 5;
+    grid-column-end: -1;
     grid-row-start: 1;
     grid-row-end: 2;
     background: #4286f4;
-    display: inline-flex;
+    display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    align-items: center;
 }
 
 .BackgroundBox {
     grid-column-start: 2;
-    grid-column-end: 4;
+    grid-column-end: 8;
     grid-row-start: 2;
     grid-row-end: 3;
     display: grid;
@@ -86,25 +85,29 @@ h3 {
 
 .nav li {
     display: inline-block;
-
-
-
+}
 
 label {
     display: inline-block;
     margin-bottom: 10px;
     font-family: Helvetica, Arial;
     font-size: 15px;
-    float: left;
-    clear: left;
+    text-align: left;
+    width: 95px;
 }
 
 input {
-    display: inline-block;
-    margin-bottom: 10px;
-    float: right;
     align-self: right;
 }
+
+input[type=text] {
+
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
 input[type=submit] {
     font-size: 15px;
     font-weight: bold;
