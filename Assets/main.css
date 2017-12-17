@@ -11,11 +11,12 @@ body {
     grid-column-end: -1;
     grid-row-start: 1;
     grid-row-end: 2;
-    background: #4286f4;
+    background: #4a9be2;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
 .BackgroundBox {
@@ -57,21 +58,26 @@ body {
     grid-row-start: 2;
     grid-row-end: 3;
     background: #f9f9fc;
-    margin: 15px auto 15px auto;
+    margin: 10px 10px 20px 10px;
+    box-shadow: 5px 5px 5px #3e4349;
 }
 
 .nav {
     display: inline;
+    margin-right: 50px;
 }
 
 .nav li {
     display: inline-block;
+    margin-right: 10px;
 }
 
 h1 {
     font-family: Helvetica, Arial;
     font-size: 30px;
     font-weight: bold;
+    color: #3f4b56;
+    margin-left: 20px;
 }
 
 a {
@@ -80,7 +86,7 @@ a {
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 h3 {
