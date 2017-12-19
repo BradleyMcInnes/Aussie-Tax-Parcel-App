@@ -19,7 +19,7 @@
                     <input type="text" id="Current-Name"/><br/>
                     <label for="Current-Unit">Units Hold</label>
                     <input type="number" id="Current-Name" class="CurrentUnits"><br/>
-                    <input type="submit" value="Add"/>
+                    <input type="submit" value="Add" onclick="Deltas()">
                 </form>
             </div>
             <div class="TargetBox">
@@ -34,9 +34,14 @@
             </div>
             <div class="DeltaBox">
                 <h3>Deltas</h3>
+                   <input id="NumOne" type="text"/>
+                   <input id="NumTwo" type="text"/>
+                   <input type="button" onclick="sum()" value="sum"/>
             </div>
-        </div>
-        <script type="text/javascript" src="../scripts/TaxParcel.js"></script>
+        </div>   
     </body>
+    <footer>
+        <script type="text/javascript" src="../scripts/TaxParcel.js"></script>
+    </footer>
 </html>
 

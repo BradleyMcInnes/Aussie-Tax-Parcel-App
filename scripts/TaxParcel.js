@@ -1,10 +1,13 @@
-/* global document */
+//alert('Hi Milla, I hope this works');
 
-var CurrentUnits = document.getElementsByClassName('.CurrentUnits');
-var TargetUnits = document.getElementsByClassName('.TargetUnits');
+var NumOne,NumTwo;
+function setValues(){
+    NumOne = Number(document.getElementById('NumOne').value);
+    NumTwo = Number(document.getElementById('NumTwo').value);
+}
 
-
-function Deltas() {
-    var delta = TargetUnits - CurrentUnits;
-    alert(delta);
+function sum(){
+    setValues();
+    result = NumOne+NumTwo;
+    alert("The sum is equal to "+results);
 }
