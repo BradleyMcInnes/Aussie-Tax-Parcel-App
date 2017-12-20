@@ -1,13 +1,7 @@
-//alert('Hi Milla, I hope this works');
-
-var NumOne,NumTwo;
-function setValues(){
-    NumOne = Number(document.getElementById('NumOne').value);
-    NumTwo = Number(document.getElementById('NumTwo').value);
-}
 
 function sum(){
-    setValues();
-    result = NumOne+NumTwo;
+    a = Number(document.getElementById('a').value);
+    b = Number(document.getElementById('b').value);
+    var results = a+b;
     alert("The sum is equal to "+results);
 }
