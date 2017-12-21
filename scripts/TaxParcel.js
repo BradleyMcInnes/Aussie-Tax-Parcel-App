@@ -1,7 +1,12 @@
 
-function sum(){
-    a = Number(document.getElementById('a').value);
-    b = Number(document.getElementById('b').value);
-    var results = a+b;
-    alert("The sum is equal to "+results);
+function delta(){
+    var CurrentName = document.getElementById('CurrentName').value;
+    var TargetName = document.getElementById('TargetName').value;
+    var CurrentUnits = Number(document.getElementById('CurrentUnits').value);
+    var TargetUnits = Number(document.getElementById('TargetUnits').value);
+
+    if(CurrentName==" " || TargetName==" " || CurrentUnits==" " || TargetUnits==" "){
+    	alert('One or more inputs is empty');
+
+    }
 }

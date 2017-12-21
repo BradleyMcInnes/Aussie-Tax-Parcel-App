@@ -34,9 +34,13 @@
             </div>
             <div class="DeltaBox">
                 <h3>Deltas</h3>
-                   <input id="a" type="text"/>
-                   <input id="b" type="text"/>
-                   <input type="button" onclick="sum()" value="sum"/>
+                    <form name="MyForm" onsubmit="return delta()">
+                        <label>Current Share Name:</label><input type="text" name="Current-Name" id="CurrentName"/><br/>
+                        <label>Current Units Hold:</label><input type="text" name="CurrentUnits" id="CurrentUnits"><br/>
+                        <label>Target Share Name:</label><input type="text" name="Target-Name" id="TargetName"/><br/>
+                        <label>Target Units Hold:</label><input type="text" name="Target-Units" id="TargetUnits"/><br/>
+                        <input type="submit" value="delta"/>
+                    </form>
             </div>
         </div>   
     </body>
