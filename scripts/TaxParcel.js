@@ -7,6 +7,12 @@ function delta(){
 
     if(CurrentName==" " || TargetName==" " || CurrentUnits==" " || TargetUnits==" "){
     	alert('One or more inputs is empty');
-
-    }
+    	}
+    	else if(TargetName!=CurrentName){
+    	alert('Target and current entities must match');
+    	}
+    	else{
+    	var delta = TargetUnits - CurrentUnits;
+    	alert('The difference is ' + delta);
+    	}    				
 }
