@@ -35,17 +35,15 @@
             </div>
             <div class="DeltaBox">
                 <h3>Deltas</h3>
-                    <form name="MyForm" accept-charset=utf-8 onsubmit="return delta()">
                         <label>Current Share Name:</label><input type="text" name="Current-Name" id="CurrentName"/><br/>
                         <label>Current Units Hold:</label><input type="text" name="CurrentUnits" id="CurrentUnits"><br/>
                         <label>Target Share Name:</label><input type="text" name="Target-Name" id="TargetName"/><br/>
                         <label>Target Units Hold:</label><input type="text" name="Target-Units" id="TargetUnits"/><br/>
-                        <input type="submit" value="delta"/>
+                        <button onclick="delta()">Deltas</button>
                         <p>The difference between my target and current values for</p>
                         <p id="OutputName">____</p>
                         <p>is</p>
                         <p id="OutputDelta">____</p>
-                    </form>
             </div>
         </div>   
     </body>

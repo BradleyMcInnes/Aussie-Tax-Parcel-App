@@ -16,7 +16,7 @@ function delta(){
     	else{
     	var delta = TargetUnits - CurrentUnits;
         //alert(delta);
-    	document.getElementById('OutputName').innerHTML = "Test";
-        document.getElementById('OutputDelta').innerHTML = "test";
+    	document.getElementById('OutputName').innerHTML = TargetName;
+        document.getElementById('OutputDelta').innerHTML = delta;
     	}    				
 }
