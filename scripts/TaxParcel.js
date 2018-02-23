@@ -1,4 +1,28 @@
 
+ $(document).ready(function() {
+    $('.JS-Topbox--nav-dropdown').click(function() {
+        var $this = $(this);
+        
+      if ($this.children('.Topbox--nav-dropdown-menu').hasClass('open')) {
+        $this.removeClass('active');
+        $this.children('.Topbox--nav-dropdown-menu').removeClass('open');
+        $this.children('.Topbox--nav-dropdown-menu').fadeOut("fast");
+      } 
+        
+        
+        else {
+          $this.addClass('active');
+          $this.children('.Topbox--nav-dropdown-menu').addClass('open');
+          $this.children('.Topbox--nav-dropdown-menu').fadeIn("fast");
+        }
+
+    });
+    
+
+    
+});
+
+
 function delta(){
     var CurrentName = document.getElementById('CurrentName').value;
     var TargetName = document.getElementById('TargetName').value;
@@ -20,3 +44,5 @@ function delta(){
         document.getElementById('OutputDelta').innerHTML = delta;
     	}    				
 }
+
+
